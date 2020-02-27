@@ -7,16 +7,21 @@
 # 网站：www.atrandys.com"
 # Youtube：atrandys"
 #=========================
+#Make it use newer version
 
 #安装epel源
 yum -y install wget
-yum -y install epel-release
+yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
 #启用epel
-sed -i "s/enabled=0/enabled=1/" /etc/yum.repos.d/epel.repo
+#sed -i "s/enabled=0/enabled=1/" /etc/yum.repos.d/epel.repo
 
 #安装openvpn
-yum -y install openvpn-2.4.7-1.el7 easy-rsa-3.0.3-1.el7
+yum -y install openvpn easy-rsa
+
+#改文件名名字
+
+mv /usr/share/easy-rsa/3.0.6 /usr/share/easy-rsa/3.0.3
 
 #复制easy到openvpn
 cp -rf /usr/share/easy-rsa/ /etc/openvpn/easy-rsa
