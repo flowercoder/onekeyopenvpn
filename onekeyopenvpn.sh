@@ -22,6 +22,9 @@ yum -y install openvpn easy-rsa
 #改文件名名字
 
 mv /usr/share/easy-rsa/3.0.6 /usr/share/easy-rsa/3.0.3
+mv /usr/share/doc/openvpn-2.4.8 /usr/share/doc/openvpn-2.4.7
+mv /usr/share/doc/easy-rsa-3.0.6 /usr/share/doc/easy-rsa-3.0.3
+
 
 #复制easy到openvpn
 cp -rf /usr/share/easy-rsa/ /etc/openvpn/easy-rsa
