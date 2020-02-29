@@ -1,3 +1,16 @@
+1.2/2/27
+做了3件事，现在这个时候，原脚本无法正常运行我做了如下3件事
+1.更换epel源地址 2. 将安装好的较新版本openvpn和easy-rsa改成原脚本版本的文件夹目录，其他都没动
+3.服务器上安装centos7
+wget https://raw.githubusercontent.com/flowercoder/onekeyopenvpn/flowercoder-easy-rsa-03.0.6-1.el7-openvpn-2.4.8-1.el7.x86_64/onekeyopenvpn.sh
+chmod +x onekeyopenvpn.sh
+bash onekeyopenvpn.sh
+
+P.S udpspeeder、udp2raw可以去wangyu- 下面找到最新版本，源码没有加密，这个脚本很简单，具体有没有用处我也说不清。
+
+Good Luck！Have Fun！
+分割线以下是原内容
+---------------------------------------------------------------------------------------------------------------我是分割线
 # onekeyopenvpn
 本游戏代理方案使用openvpn+udp2raw+udpspeeder，只简单搞了服务端centos7+客户端windows 64bit，方案使用的软件都提供了出处，你也可以按步骤自行搞定其他版本。
 
